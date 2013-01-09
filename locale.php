@@ -8,11 +8,14 @@ function use_locale($locale)
 	setlocale(LC_MESSAGES, $locale);
 	bindtextdomain('HFBorrowAC', './locale');
 	textdomain('HFBorrowAC');
+	bind_textdomain_codeset('HFBorrowAC', 'utf-8');
+	echo setlocale(LC_MESSAGES, 0);
 }
 
 if (isset($_GET['locale']))
 {
 	setcookie('locale', $_GET['locale'], time() + 3600 * 24);
+	//print_r($locale_code[$_GET['locale']]);
 	use_locale($locale_code[$_GET['locale']]);
 }
 else if (!isset($_COOKIE['locale']))
