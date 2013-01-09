@@ -9,7 +9,6 @@ function use_locale($locale)
 	bindtextdomain('HFBorrowAC', './locale');
 	textdomain('HFBorrowAC');
 	bind_textdomain_codeset('HFBorrowAC', 'utf-8');
-	echo setlocale(LC_MESSAGES, 0);
 }
 
 if (isset($_GET['locale']))
