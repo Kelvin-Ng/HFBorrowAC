@@ -13,7 +13,7 @@ function show_login($wrong)
 		echo "\t\t<a>" . _('Wrong password') . "</a>\n";
 	}
 ?>
-		<form>
+		<form action="admin.php" method="post">
 			<a><?echo _('Password: ')?></a>
 			<input type="password" name="password">
 			<br>
