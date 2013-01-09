@@ -15,6 +15,7 @@ require 'header.php';
 require 'config.php';
 
 $handle = mysqli_connect($db_host, $db_username, $db_password);
+$handle->select_db($db_name);
 $today = mktime(0, 0, 0);
 $result = $handle->query(
 "SELECT username, time, provider FROM borrow WHERE time>=$today AND provider != ''");

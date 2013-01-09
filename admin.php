@@ -14,6 +14,7 @@ require 'config.php';
 <?
 
 $handle = mysqli_connect($db_host, $db_username, $db_password);
+$handle->select_db($db_name);
 $result = $handle->query("SELECT username FROM borrow WHERE provider = ''");
 while ($row = $result->fetch_row())
 {

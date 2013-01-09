@@ -74,6 +74,7 @@ if (isset($_POST['submit']))
 	}
 
 	$handle = mysqli_connect($db_host, $db_username, $db_password);
+	$handle->select_db($db_name);
 
 	$result = $handle->query("SELECT COUNT(*) FROM borrow WHERE time = $time");
 	$num = $result->fetch_row();

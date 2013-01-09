@@ -4,6 +4,7 @@ require 'header.php'
 require 'config.php';
 
 $handle = mysqli_connect($db_host, $db_username, $db_password);
+$handle->select_db($db_name);
 if (isset($_POST['submit_provider']))
 {
 	foreach ($_POST['provider'] as $borrower => $provider)
