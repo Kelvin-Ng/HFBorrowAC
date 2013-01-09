@@ -118,7 +118,8 @@ if (isset($_POST['submit']))
 	}
 	else
 	{
-		$handle->query("INSERT INTO borrow VALUES('$username', $time)");
+		$handle->query(
+			"INSERT INTO borrow VALUES('$username', $time, '', FALSE)");
 	}
 	$result->free();
 }
