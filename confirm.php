@@ -1,6 +1,6 @@
 <?
 
-require 'header.php'
+require 'header.php';
 require 'config.php';
 
 $handle = mysqli_connect($db_host, $db_username, $db_password);
