@@ -64,6 +64,11 @@ foreach ($_POST['blacklist'] as $username => $value)
 		$handle->query(
 	"UPDATE borrow SET provider='', blacklist=TRUE WHERE username='$username'");
 	}
+	else
+	{
+		$handle->query(
+	"UPDATE borrow SET provider='', blacklist=FALSE WHERE username='$username'");
+	}
 }
 
 echo '<a herf="admin.php">' . _('Click me to return to Admin Area') . '</a>';
