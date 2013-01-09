@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-09 17:48+0800\n"
+"POT-Creation-Date: 2013-01-09 19:07+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Kelvin Ng (qpalz) <kelvin9302104@gmail.com>\n"
 "Language-Team: Traditional Chinese <kelvin9302104@gmail.com>\n"
@@ -32,7 +32,7 @@ msgstr "密码："
 msgid "Awaiting List"
 msgstr "等待列表"
 
-#: admin.php:5​​2
+#: admin.php:5​​2 admin.php:82
 msgid "Borrower"
 msgstr "借号者"
 
@@ -40,19 +40,23 @@ msgstr "借号者"
 msgid "Provider"
 msgstr "提供者"
 
-#: admin.php:5​​4
+#: admin.php:5​​4 admin.php:83
 msgid "Blacklist"
 msgstr "黑名单"
 
-#: admin.php:78
+#: admin.php:79
 msgid "Old Borrowers"
 msgstr "借号者"
 
-#: admin.php:98
-msgid "Provider Id: "
-msgstr "提供者"
+#: admin.php:103
+msgid "Add Provider"
+msgstr "增加提供者"
 
-#: confirm.php:67
+#: admin.php:105
+msgid "Provider Id: "
+msgstr "提供者："
+
+#: confirm.php:69
 msgid "Click me to return to Admin Area"
 msgstr "按我回到管理区"
 

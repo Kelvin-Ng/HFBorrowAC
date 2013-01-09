@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-09 17:48+0800\n"
+"POT-Creation-Date: 2013-01-09 19:07+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgstr ""
 msgid "Awaiting List"
 msgstr ""
 
-#: admin.php:52
+#: admin.php:52 admin.php:82
 msgid "Borrower"
 msgstr ""
 
@@ -41,19 +41,23 @@ msgstr ""
 msgid "Provider"
 msgstr ""
 
-#: admin.php:54
+#: admin.php:54 admin.php:83
 msgid "Blacklist"
 msgstr ""
 
-#: admin.php:78
+#: admin.php:79
 msgid "Old Borrowers"
 msgstr ""
 
-#: admin.php:98
+#: admin.php:103
+msgid "Add Provider"
+msgstr ""
+
+#: admin.php:105
 msgid "Provider Id: "
 msgstr ""
 
-#: confirm.php:67
+#: confirm.php:69
 msgid "Click me to return to Admin Area"
 msgstr ""
 
