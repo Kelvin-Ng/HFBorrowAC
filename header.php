@@ -9,6 +9,9 @@ require 'locale.php';
 	</head>
 	<body>
 		<h1><?echo _('HF Borrow AC System')?></h1>
-		<a href="/?locale=en_US" style="text-align: center">English</a>
-		<a href="/?locale=zh_TW" style="text-align: center">繁體中文</a>
-		<a href="/?locale=zh_CN" style="text-align: center">简体中文</a>
+		<p style="text-align: center">
+			<a href="/?locale=en_US">English</a>
+			<a href="/?locale=zh_TW">繁體中文</a>
+			<a href="/?locale=zh_CN">简体中文</a>
+			<a href="admin.php"><?echo _('Admin Area')?>
+		</p>

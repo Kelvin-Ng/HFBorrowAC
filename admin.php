@@ -1,10 +1,51 @@
 <?
 
-require 'header.php';
+function init()
+{
+	require 'header.php';
+	echo "\t\t<h2>" . _('Admin Area') . "</h2>\n"
+}
+
+function show_login($wrong)
+{
+	if ($wrong)
+	{
+		echo "\t\t<a>" . _('Wrong password') . "</a>\n";
+	}
+?>
+		<form>
+			<a><?echo _('Password: ')?></a>
+			<input type="password" name="password">
+			<br>
+			<input type="submit" name="submit">
+		</form>
+<?
+}
+
+if (isset($_POST['submit']))
+{
+	if ($_POST['password'] == '08b40')
+	{
+		setcookie('admin', $_POST['password'], time() + 3600 * 24 * 7);
+	}
+	else
+	{
+		init();
+		show_login(true);
+		die(0);
+	}
+}
+else if ($_COOKIE['admin'] != '08b40')
+{
+	init();
+	show_login();
+	die(0);
+}
+
+init();
 require 'config.php';
 
 ?>
-		<h2><?echo _('Admin Area')?></h2>
 		<h3>Awaiting List</h3>
 		<form action="confirm.php" method="post"><table>
 			<tr>
