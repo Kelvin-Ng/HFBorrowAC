@@ -59,7 +59,7 @@ else if (isset($_POST['submit_provider']))
 if (isset($_POST['blacklist']))
 foreach ($_POST['blacklist'] as $username => $value)
 {
-	if ($value)
+	if ($value == 'on')
 	{
 		$handle->query(
 	"UPDATE borrow SET provider='', blacklist=TRUE WHERE username='$username'");
