@@ -10,9 +10,9 @@ function ERR_FULL($max_num)
 		<br>
 		<a><?echo _('We will only accept') .
 			 $max_num .
-			 _('booking(s) each day.');?>
+			 _('booking(s) each day.')?></a>
 		<br>
-		<a><?echo _("Please be earlier next time! :)");?>
+		<a><?echo _('Please be earlier next time! :)');?>
 <?
 	die(1);
 }
@@ -24,7 +24,7 @@ function ERR_LOW_LV($lv)
 		<br>
 		<a><?echo _('You need to be lv 5 or above but you are lv ') .
 			$lv .
-			_(' only.');?>
+			_(' only.');?></a>
 <?
 	die(1);
 }
@@ -36,7 +36,7 @@ function ERR_2_WEEKS($last_time)
 ?>
 		<a><?echo _('Sorry, you borrowed an AC on the pass two weeks.')?></a>
 		<br>
-		<a><?echo _('You can borrow an AC again on ') .  $date)?>
+		<a><?echo _('You can borrow an AC again on ') .  $date?></a>
 <?
 	die(1);
 }
@@ -46,7 +46,7 @@ function ERR_BLACK_LST()
 ?>
 		<a><?echo _('Error: you are in the blacklist now.')?></a>
 		<br>
-		<a><?echo _("You will nerver be able to borrow an AC again.");?>
+		<a><?echo _('You will nerver be able to borrow an AC again.');?>
 <?
 	die(1);
 }

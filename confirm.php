@@ -8,6 +8,7 @@ $handle->select_db($db_name);
 
 if (isset($_POST['submit_borrower']))
 {
+	if (isset($_POST['provider']))
 	foreach ($_POST['provider'] as $borrower => $provider)
 	{
 		if ($_POST['blacklist'][$borrower])
@@ -55,6 +56,7 @@ else if (isset($_POST['submit_provider']))
 	$handle->query("INSERT INTO provide VALUES('{$_POST['id']}')");	
 }
 
+if (isset($_POST['blacklist']))
 foreach ($_POST['blacklist'] as $username => $value)
 {
 	if ($value)
