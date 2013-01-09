@@ -47,6 +47,7 @@ $result->free();
 						<select name="date">
 <?
 $timestamp = mktime(0, 0, 0);
+$timestamp = strtotime('+7 day', $timestamp);
 $date = date('j/n', $timestamp);
 ?>
 							<option value="<?
