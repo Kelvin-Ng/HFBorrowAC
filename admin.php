@@ -92,7 +92,7 @@ while ($row = $result->fetch_row())
 				<td><?echo $row[0]?></td>
 				<td><input type="checkbox"
 					name="blacklist[<?echo $row[0]?>]"
-					<?echo ($row[1] ? 'value=1' : '')?>></td>
+					<?echo ($row[1] ? 'checked' : '')?>></td>
 			</tr>
 <?
 }
