@@ -3,7 +3,7 @@
 function init()
 {
 	require 'header.php';
-	echo "\t\t<h2>" . _('Admin Area') . "</h2>\n"
+	echo "\t\t<h2>" . _('Admin Area') . "</h2>\n";
 }
 
 function show_login($wrong)
