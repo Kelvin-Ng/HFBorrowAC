@@ -46,7 +46,7 @@ msgstr "黑名單"
 
 #: admin.php:79
 msgid "Old Borrowers"
-msgstr "借號者"
+msgstr "舊借號者"
 
 #: admin.php:103
 msgid "Add Provider"
