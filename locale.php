@@ -19,7 +19,7 @@ else if (!isset($_COOKIE['locale']))
 {
 	$locale = explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE']);
 	setcookie('locale', $locale[0], time() + 3600 * 24 * 7);
-	use_locale($locale_code[$locale]);
+	use_locale($locale_code[$locale[0]]);
 }
 else
 {
