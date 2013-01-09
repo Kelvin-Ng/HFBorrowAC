@@ -8,7 +8,9 @@ function ERR_FULL($max_num)
 ?>
 		<a><?echo _('Sorry, the booking is full that day.')?></a>
 		<br>
-		<a><?echo _("We will only accept $max_num of booking each day.");?>
+		<a><?echo _('We will only accept') .
+			 $max_num .
+			 _('booking(s) each day.');?>
 		<br>
 		<a><?echo _("Please be earlier next time! :)");?>
 <?
@@ -20,7 +22,9 @@ function ERR_LOW_LV($lv)
 ?>
 		<a><?echo _('Sorry, your level in tieba is too low.')?></a>
 		<br>
-		<a><?echo _("You need to be lv 5 or above but you are lv $lv only.");?>
+		<a><?echo _('You need to be lv 5 or above but you are lv ') .
+			$lv .
+			_(' only.');?>
 <?
 	die(1);
 }
@@ -32,7 +36,7 @@ function ERR_2_WEEKS($last_time)
 ?>
 		<a><?echo _('Sorry, you borrowed an AC on the pass two weeks.')?></a>
 		<br>
-		<a><?echo _("You can borrow an AC again on $date.");?>
+		<a><?echo _('You can borrow an AC again on ') .  $date)?>
 <?
 	die(1);
 }

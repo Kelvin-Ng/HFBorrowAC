@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-09 17:22+0800\n"
+"POT-Creation-Date: 2013-01-09 17:48+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,6 +29,10 @@ msgstr ""
 msgid "Password: "
 msgstr ""
 
+#: admin.php:49
+msgid "Awaiting List"
+msgstr ""
+
 #: admin.php:52
 msgid "Borrower"
 msgstr ""
@@ -41,7 +45,15 @@ msgstr ""
 msgid "Blacklist"
 msgstr ""
 
-#: confirm.php:62
+#: admin.php:78
+msgid "Old Borrowers"
+msgstr ""
+
+#: admin.php:98
+msgid "Provider Id: "
+msgstr ""
+
+#: confirm.php:67
 msgid "Click me to return to Admin Area"
 msgstr ""
 
@@ -73,22 +85,42 @@ msgstr ""
 msgid "Sorry, the booking is full that day."
 msgstr ""
 
+#: submit.php:11
+msgid "We will only accept"
+msgstr ""
+
 #: submit.php:13
+msgid "booking(s) each day."
+msgstr ""
+
+#: submit.php:15
 msgid "Please be earlier next time! :)"
 msgstr ""
 
-#: submit.php:21
+#: submit.php:23
 msgid "Sorry, your level in tieba is too low."
 msgstr ""
 
-#: submit.php:33
+#: submit.php:25
+msgid "You need to be lv 5 or above but you are lv "
+msgstr ""
+
+#: submit.php:27
+msgid " only."
+msgstr ""
+
+#: submit.php:37
 msgid "Sorry, you borrowed an AC on the pass two weeks."
 msgstr ""
 
-#: submit.php:43
+#: submit.php:39
+msgid "You can borrow an AC again on "
+msgstr ""
+
+#: submit.php:47
 msgid "Error: you are in the blacklist now."
 msgstr ""
 
-#: submit.php:45
+#: submit.php:49
 msgid "You will nerver be able to borrow an AC again."
 msgstr ""

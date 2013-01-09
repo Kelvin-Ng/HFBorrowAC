@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-09 17:22+0800\n"
+"POT-Creation-Date: 2013-01-09 17:48+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Kelvin Ng (qpalz) <kelvin9302104@gmail.com>\n"
 "Language-Team: Traditional Chinese <kelvin9302104@gmail.com>\n"
@@ -28,6 +28,10 @@ msgstr "密碼錯誤"
 msgid "Password: "
 msgstr "密碼："
 
+#: admin.php:49
+msgid "Awaiting List"
+msgstr "等待列表"
+
 #: admin.php:52
 msgid "Borrower"
 msgstr "借號者"
@@ -40,7 +44,15 @@ msgstr "提供者"
 msgid "Blacklist"
 msgstr "黑名單"
 
-#: confirm.php:62
+#: admin.php:78
+msgid "Old Borrowers"
+msgstr "借號者"
+
+#: admin.php:98
+msgid "Provider Id: "
+msgstr "提供者"
+
+#: confirm.php:67
 msgid "Click me to return to Admin Area"
 msgstr "按我回到管理區"
 
@@ -72,22 +84,42 @@ msgstr "貼吧用戶名"
 msgid "Sorry, the booking is full that day."
 msgstr "對不起，這天的限額已滿。"
 
+#: submit.php:11
+msgid "We will only accept"
+msgstr "我們每天只接受"
+
 #: submit.php:13
+msgid "booking(s) each day."
+msgstr "個預約"
+
+#: submit.php:15
 msgid "Please be earlier next time! :)"
 msgstr "下一次請早一點！:)"
 
-#: submit.php:21
+#: submit.php:23
 msgid "Sorry, your level in tieba is too low."
 msgstr "對不起，你在貼吧的等級太低。"
 
-#: submit.php:33
+#: submit.php:25
+msgid "You need to be lv 5 or above but you are lv "
+msgstr "你需要有五級或以上，但你的只有"
+
+#: submit.php:27
+msgid " only."
+msgstr "級而已。"
+
+#: submit.php:37
 msgid "Sorry, you borrowed an AC on the pass two weeks."
 msgstr "對不起，你在過去兩星期曾借號。"
 
-#: submit.php:43
+#: submit.php:39
+msgid "You can borrow an AC again on "
+msgstr "你以後也不能再借號。"
+
+#: submit.php:47
 msgid "Error: you are in the blacklist now."
 msgstr "錯誤：你在黑名單裏。"
 
-#: submit.php:45
+#: submit.php:49
 msgid "You will nerver be able to borrow an AC again."
 msgstr "你以後也不能再借號。"

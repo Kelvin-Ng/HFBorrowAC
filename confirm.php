@@ -5,7 +5,8 @@ require 'config.php';
 
 $handle = mysqli_connect($db_host, $db_username, $db_password);
 $handle->select_db($db_name);
-if (isset($_POST['submit_provider']))
+
+if (isset($_POST['submit_borrower']))
 {
 	foreach ($_POST['provider'] as $borrower => $provider)
 	{
@@ -48,6 +49,10 @@ if (isset($_POST['submit_provider']))
 		$handle->query(
 		"UPDATE borrow SET provider='$provider' WHERE username='$borrower'");
 	}
+}
+else if (isset($_POST['submit_provider']))
+{
+	$handle->query("INSERT INTO provide VALUES('{$_POST['id']}')");	
 }
 
 foreach ($_POST['blacklist'] as $username => $value)

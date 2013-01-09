@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-09 17:22+0800\n"
+"POT-Creation-Date: 2013-01-09 17:48+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Kelvin Ng (qpalz) <kelvin9302104@gmail.com>\n"
-"Language-Team: Simplified Chinese <kelvin9302104@gmail.com>\n"
-"Language: Simplified Chinese\n"
+"Language-Team: Traditional Chinese <kelvin9302104@gmail.com>\n"
+"Language: Traditional Chinese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -28,19 +28,31 @@ msgstr "密码错误"
 msgid "Password: "
 msgstr "密码："
 
-#: admin.php:52
+#: admin.php:49
+msgid "Awaiting List"
+msgstr "等待列表"
+
+#: admin.php:5​​2
 msgid "Borrower"
 msgstr "借号者"
 
-#: admin.php:53 index.php:11
+#: admin.php:5​​3 index.php:11
 msgid "Provider"
 msgstr "提供者"
 
-#: admin.php:54
+#: admin.php:5​​4
 msgid "Blacklist"
 msgstr "黑名单"
 
-#: confirm.php:62
+#: admin.php:78
+msgid "Old Borrowers"
+msgstr "借号者"
+
+#: admin.php:98
+msgid "Provider Id: "
+msgstr "提供者"
+
+#: confirm.php:67
 msgid "Click me to return to Admin Area"
 msgstr "按我回到管理区"
 
@@ -72,22 +84,42 @@ msgstr "贴吧用户名"
 msgid "Sorry, the booking is full that day."
 msgstr "对不起，这天的限额已满。"
 
+#: submit.php:11
+msgid "We will only accept"
+msgstr "我们每天只接受"
+
 #: submit.php:13
+msgid "booking(s) each day."
+msgstr "个预约"
+
+#: submit.php:15
 msgid "Please be earlier next time! :)"
 msgstr "下一次请早一点！:)"
 
-#: submit.php:21
+#: submit.php:23
 msgid "Sorry, your level in tieba is too low."
 msgstr "对不起，你在贴吧的等级太低。"
 
-#: submit.php:33
+#: submit.php:25
+msgid "You need to be lv 5 or above but you are lv "
+msgstr "你需要有五级或以上，但你的只有"
+
+#: submit.php:27
+msgid " only."
+msgstr "级而已。"
+
+#: submit.php:37
 msgid "Sorry, you borrowed an AC on the pass two weeks."
 msgstr "对不起，你在过去两星期曾借号。"
 
-#: submit.php:43
+#: submit.php:39
+msgid "You can borrow an AC again on "
+msgstr "你以后也不能再借号。"
+
+#: submit.php:47
 msgid "Error: you are in the blacklist now."
 msgstr "错误：你在黑名单里。"
 
-#: submit.php:45
+#: submit.php:49
 msgid "You will nerver be able to borrow an AC again."
 msgstr "你以后也不能再借号。"

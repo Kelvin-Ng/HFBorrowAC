@@ -46,7 +46,7 @@ init();
 require 'config.php';
 
 ?>
-		<h3>Awaiting List</h3>
+		<h3><?echo _('Awaiting List')?></h3>
 		<form action="confirm.php" method="post"><table>
 			<tr>
 				<td><?echo _('Borrower')?></td>
@@ -72,10 +72,10 @@ while ($row = $result->fetch_row())
 }
 ?>
 		</table>
-		<input type="submit" name="submit_provider">
+		<input type="submit" name="submit_borrower">
 		</form>
 
-		<h3>Old Borrowers</h3>
+		<h3><?echo _('Old Borrowers')?></h3>
 		<form action="confirm.php" method="post"><table>
 <?
 $result = $handle->query(
@@ -93,6 +93,12 @@ while ($row = $result->fetch_row())
 ?>
 		</table>
 		<input type="submit" name="submit_blacklist"></input>
+		</form>
+		<form action="confirm.php" method="post">
+			<a><?echo _('Provider Id: ')?></a>
+			<input type="text" name="id">
+			<br>
+			<input type="submit" name="submit_provider">
 		</form>
 	</body>
 </html>	
