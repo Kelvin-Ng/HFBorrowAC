@@ -7,10 +7,11 @@ require 'config.php';
 		<h2><?echo _('Admin Area')?></h2>
 		<h3>Awaiting List</h3>
 		<form action="confirm.php" method="post"><table>
-			<td>
-				<tr><?echo _('Borrower')?></tr>
-				<tr><?echo _('Provider')?></tr>
-				<tr><?echo _('Blacklist')?></tr>
+			<tr>
+				<td><?echo _('Borrower')?></td>
+				<td><?echo _('Provider')?></td>
+				<td><?echo _('Blacklist')?></td>
+			</tr>
 <?
 
 $handle = mysqli_connect($db_host, $db_username, $db_password);
@@ -19,17 +20,16 @@ $result = $handle->query("SELECT username FROM borrow WHERE provider = ''");
 while ($row = $result->fetch_row())
 {
 ?>
-			<td>
-				<tr><?echo $row[0]?></tr>
-				<tr><input type="text"
-					name="provider[<?echo $row[0]?>]"></tr>
-				<tr><input type="checkbox"
-					name="blacklist[<?echo $row[0]?>]"></tr>
-			</td>
+			<tr>
+				<td><?echo $row[0]?></td>
+				<td><input type="text"
+					name="provider[<?echo $row[0]?>]"></td>
+				<td><input type="checkbox"
+					name="blacklist[<?echo $row[0]?>]"></td>
+			</tr>
 <?
 }
 ?>
-			</td>
 		</table>
 		<input type="submit" name="submit_provider">
 		</form>
@@ -42,11 +42,11 @@ $result = $handle->query(
 while ($row = $result->fetch_row())
 {
 ?>
-			<td>
-				<tr><?echo $row[0]?></tr>
-				<tr><input type="checkbox"
-					name="blacklist[<?echo $row[0]?>]"></tr>
-			</td>
+			<tr>
+				<td><?echo $row[0]?></td>
+				<td><input type="checkbox"
+					name="blacklist[<?echo $row[0]?>]"></td>
+			</tr>
 <?
 }
 ?>

@@ -5,11 +5,11 @@ require 'header.php';
 ?>
 		<h2><?echo _('Approved List')?></h2>
 		<table>
-			<td>
-				<tr><?echo _('AC in tieba')?></tr>
-				<tr><?echo _('Date')?></tr>
-				<tr><?echo _('Provider')?></tr>
-			</td>
+			<tr>
+				<td><?echo _('AC in tieba')?></td>
+				<td><?echo _('Date')?></td>
+				<td><?echo _('Provider')?></td>
+			</tr>
 <?
 
 require 'config.php';
@@ -23,11 +23,11 @@ while ($row = $result->fetch_row())
 {
 	$date = date('j/n', $row[1]);
 ?>
-			<td>
-				<tr><?echo $row[0]?>
-				<tr><?echo $date?>
-				<tr><?echo $row[2]?>
-			</td>
+			<tr>
+				<td><?echo $row[0]?></td>
+				<td><?echo $date?></td>
+				<td><?echo $row[2]?></td>
+			</tr>
 <?
 }
 $result->free();
@@ -37,13 +37,13 @@ $result->free();
 		<h2><?echo _('Borrow an AC')?></h2>
 		<form action="submit.php" method="post">
 			<table>
-				<td>
-					<tr><?echo _('User name in tieba')?></tr>
-					<tr><?echo _('Date')?></tr>
-				</td>
-				<td>
-					<tr><input type="text" name="username"></tr>
-					<tr>
+				<tr>
+					<td><?echo _('User name in tieba')?></td>
+					<td><?echo _('Date')?></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="username"></td>
+					<td>
 						<select name="date">
 <?
 $timestamp = mktime(0, 0, 0);
@@ -67,8 +67,8 @@ for ($i = 0; $i < 6; $i++)
 }
 ?>
 						</select>
-					</tr>
-				</td>
+					</td>
+				</tr>
 			</table>
 			<input type="submit" name="submit">
 		</form>
