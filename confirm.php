@@ -62,7 +62,7 @@ foreach ($_POST['blacklist'] as $username => $value)
 	if ($value)
 	{
 		$handle->query(
-	"UPDATE borrow SET provider='', blacklist=TRUE WHERE username=$username");
+	"UPDATE borrow SET provider='', blacklist=TRUE WHERE username='$username'");
 	}
 }
 
