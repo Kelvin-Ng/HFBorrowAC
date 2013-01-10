@@ -35,7 +35,7 @@ $result->free();
 ?>
 		</table>
 		<div style="float: right">
-		<h2><? echo _('Not Approved List')?></h2>
+		<h2><? echo _('Awaiting List')?></h2>
 		<table>
 			<tr>
 				<td><?echo _('AC in tieba')?></td>
@@ -56,7 +56,7 @@ while ($row = $result->fetch_row())
 			</tr>
 <?
 }
-$result = $handle->query(
+$result->free();
 ?>
 		</table>
 		</div>

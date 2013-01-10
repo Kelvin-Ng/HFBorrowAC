@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-10 14:31+0800\n"
+"POT-Creation-Date: 2013-01-10 18:28+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Kelvin Ng (qpalz) <kelvin9302104@gmail.com>\n"
 "Language-Team: Traditional Chinese <kelvin9302104@gmail.com>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: admin.php:6 header.php:17
+#: admin.php:6 header.php:18
 msgid "Admin Area"
 msgstr "管理区"
 
@@ -28,7 +28,7 @@ msgstr "密码错误"
 msgid "Password: "
 msgstr "密码："
 
-#: admin.php:49
+#: admin.php:49 index.php:38
 msgid "Awaiting List"
 msgstr "等待列表"
 
@@ -36,7 +36,7 @@ msgstr "等待列表"
 msgid "Borrower"
 msgstr "借号者"
 
-#: admin.php:53 index.php:11
+#: admin.php:53 index.php:11 index.php:43
 msgid "Provider"
 msgstr "提供者"
 
@@ -73,7 +73,7 @@ msgstr "提供者："
 msgid "Click me to return to Admin Area"
 msgstr "按我回到管理区"
 
-#: header.php:9 header.php:12
+#: header.php:9 header.php:13
 msgid "HF Borrow AC System"
 msgstr "HF 借号系统"
 
@@ -81,19 +81,19 @@ msgstr "HF 借号系统"
 msgid "Approved List"
 msgstr "批准名单"
 
-#: index.php:9
+#: index.php:9 index.php:41
 msgid "AC in tieba"
 msgstr "贴吧用户名"
 
-#: index.php:10 index.php:42
+#: index.php:10 index.php:42 index.php:68
 msgid "Date"
 msgstr "日期"
 
-#: index.php:37
+#: index.php:63
 msgid "Borrow an AC"
 msgstr "借号"
 
-#: index.php:41
+#: index.php:67
 msgid "User name in tieba"
 msgstr "贴吧用户名"
 

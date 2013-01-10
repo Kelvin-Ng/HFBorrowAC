@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-10 14:31+0800\n"
+"POT-Creation-Date: 2013-01-10 18:28+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: admin.php:6 header.php:17
+#: admin.php:6 header.php:18
 msgid "Admin Area"
 msgstr ""
 
@@ -29,7 +29,7 @@ msgstr ""
 msgid "Password: "
 msgstr ""
 
-#: admin.php:49
+#: admin.php:49 index.php:38
 msgid "Awaiting List"
 msgstr ""
 
@@ -37,7 +37,7 @@ msgstr ""
 msgid "Borrower"
 msgstr ""
 
-#: admin.php:53 index.php:11
+#: admin.php:53 index.php:11 index.php:43
 msgid "Provider"
 msgstr ""
 
@@ -73,7 +73,7 @@ msgstr ""
 msgid "Click me to return to Admin Area"
 msgstr ""
 
-#: header.php:9 header.php:12
+#: header.php:9 header.php:13
 msgid "HF Borrow AC System"
 msgstr ""
 
@@ -81,19 +81,19 @@ msgstr ""
 msgid "Approved List"
 msgstr ""
 
-#: index.php:9
+#: index.php:9 index.php:41
 msgid "AC in tieba"
 msgstr ""
 
-#: index.php:10 index.php:42
+#: index.php:10 index.php:42 index.php:68
 msgid "Date"
 msgstr ""
 
-#: index.php:37
+#: index.php:63
 msgid "Borrow an AC"
 msgstr ""
 
-#: index.php:41
+#: index.php:67
 msgid "User name in tieba"
 msgstr ""
 
