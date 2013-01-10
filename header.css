@@ -1,0 +1,57 @@
+body
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #4c0000;
+	color: #efc245;
+	font-size: 12px;
+}
+
+h1
+{
+	text-align: center;
+	text-decoration: underline;
+}
+
+h2
+{
+	text-decoration: underline;
+}
+
+h3
+{
+	font-style: italic;
+}
+
+a:link
+{
+	color: #efc245;
+	text-decoration: underline;
+}
+
+a:visited
+{
+	color: #fdebb9;
+	text-decoration: underline;
+}
+
+table, td, tr
+{
+	border: 2px solid white;
+}
+
+table
+{
+	background-color: #efc245;
+	color: #4c0000;
+	text-align: center;
+	width: 40%;
+	border-collapse: collapse;
+}
+
+form
+{
+	border: 2px solid white;
+	background-color: #efc245;
+	color: #4c0000;
+}
+
