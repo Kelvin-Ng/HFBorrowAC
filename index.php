@@ -3,8 +3,8 @@
 require 'header.php';
 
 ?>
-		<h2><? echo _('Awaiting List')?></h2>
 		<div style="float: right">
+		<h2><? echo _('Awaiting List')?></h2>
 		<table>
 			<tr>
 				<td><?echo _('AC in tieba')?></td>
