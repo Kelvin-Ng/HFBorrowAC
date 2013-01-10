@@ -59,7 +59,7 @@ else if (isset($_POST['del_provider']))
 {
 	foreach ($_POST['del_provider'] as $id => $value)
 	{
-		$handle->query("DELETE FROM provide WHERE id = $id");
+		$handle->query("DELETE FROM provide WHERE id = '$id'");
 	}
 }
 
