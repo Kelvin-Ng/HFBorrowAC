@@ -3,7 +3,7 @@
 require 'header.php';
 
 ?>
-		<div style="float: right">
+		<div class="right_div">
 		<h2><? echo _('Awaiting List')?></h2>
 		<table>
 			<tr>
@@ -38,7 +38,7 @@ $result->free();
 		</div>
 
 		<h2><?echo _('Approved List')?></h2>
-		<table>
+		<table class="left_table">
 			<tr>
 				<td><?echo _('AC in tieba')?></td>
 				<td><?echo _('Date')?></td>

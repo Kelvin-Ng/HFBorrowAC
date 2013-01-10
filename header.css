@@ -44,11 +44,21 @@ table
 	background-color: #efc245;
 	color: #4c0000;
 	text-align: center;
-	width: 40%;
 	border-collapse: collapse;
 }
 
-div.h2
+table.left_table
+{
+	width: 40%;
+}
+
+.right_div
+{
+	float: right;
+	width: 40%;
+}
+
+.right_div h2, .right_div h3
 {
 	margin-top: 0;
 }
