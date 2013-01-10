@@ -53,13 +53,16 @@ require 'config.php';
 				<td><?echo _('Borrower')?></td>
 				<td><?echo _('Provider')?></td>
 				<td><?echo _('Blacklist')?></td>
+				<td><?echo _('Delete')?></td>
 			</tr>
 <?
+
+$today = mktime(0, 0, 0);
 
 $handle = mysqli_connect($db_host, $db_username, $db_password);
 $handle->select_db($db_name);
 $result = $handle->query(
-	"SELECT username FROM borrow WHERE provider='' AND blacklist=FALSE");
+"SELECT username FROM borrow WHERE provider='' AND blacklist=FALSE AND time>$today");
 while ($row = $result->fetch_row())
 {
 ?>
@@ -69,6 +72,8 @@ while ($row = $result->fetch_row())
 					name="provider[<?echo $row[0]?>]"></td>
 				<td><input type="checkbox"
 					name="blacklist[<?echo $row[0]?>]"></td>
+				<td><input type="checkbox"
+					name="del_borrower[<?echo $row[0]?>]"></td>
 			</tr>
 <?
 }
@@ -83,10 +88,11 @@ while ($row = $result->fetch_row())
 			<tr>
 				<td><?echo _('Borrower')?></td>
 				<td><?echo _('Blacklist')?></td>
+				<td><?echo _('Delete')?></td>
 			</tr>
 <?
 $result = $handle->query(
-	"SELECT username, blacklist FROM borrow WHERE time < " . time());
+	"SELECT username, blacklist FROM borrow WHERE time <= $today");
 while ($row = $result->fetch_row())
 {
 ?>
@@ -97,6 +103,8 @@ while ($row = $result->fetch_row())
 				<td><input type="checkbox"
 					name="blacklist[<?echo $row[0]?>]"
 					<?echo ($row[1] ? 'checked' : '')?>></td>
+				<td><input type="checkbox"
+				name="del_old_borrower[<?echo $row[0]?>]"></td>
 			</tr>
 <?
 }

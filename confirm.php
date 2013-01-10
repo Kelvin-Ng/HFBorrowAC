@@ -50,10 +50,22 @@ if (isset($_POST['submit_borrower']))
 		$handle->query(
 		"UPDATE borrow SET provider='$provider' WHERE username='$borrower'");
 	}
+	
+	foreach ($_POST['del_borrower'] as $username => $value)
+	{
+		$handle->query("DELETE FROM borrow WHERE username = '$username'");
+	}
 }
 else if (isset($_POST['submit_add_provider']))
 {
 	$handle->query("INSERT INTO provide VALUES('{$_POST['id']}')");	
+}
+else if (isset($_POST['del_old_borrower']))
+{
+	foreach ($_POST['del_old_borrower'] as $username => $value)
+	{
+		$handle->query("DELETE FROM borrow WHERE username = '$username'");
+	}
 }
 else if (isset($_POST['del_provider']))
 {
