@@ -34,6 +34,32 @@ $result->free();
 
 ?>
 		</table>
+		<div style="float: right">
+		<h2><? echo _('Not Approved List')?></h2>
+		<table>
+			<tr>
+				<td><?echo _('AC in tieba')?></td>
+				<td><?echo _('Date')?></td>
+				<td><?echo _('Provider')?></td>
+			</tr>
+<?
+$result = $handle->query(
+"SELECT username, time, provider FROM borrow WHERE time>=$today AND provider == ''");
+while ($row = $result->fetch_row())
+{
+	$date = date('j/n', $row[1]);
+?>
+			<tr>
+				<td><?echo $row[0]?></td>
+				<td><?echo $date?></td>
+				<td><?echo $row[2]?></td>
+			</tr>
+<?
+}
+$result = $handle->query(
+?>
+		</table>
+		</div>
 		<h2><?echo _('Borrow an AC')?></h2>
 		<form action="submit.php" method="post">
 			<table>

@@ -7,6 +7,7 @@ require 'locale.php';
 <html>
 	<head>
 		<title><?echo _('HF Borrow AC System')?></title>
+		<link rel="stylesheet" href="header.css">
 	</head>
 	<body>
 		<h1><?echo _('HF Borrow AC System')?></h1>
