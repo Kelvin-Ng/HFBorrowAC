@@ -47,7 +47,7 @@ table
 	border-collapse: collapse;
 }
 
-table.left_table
+.left_table
 {
 	width: 40%;
 }
@@ -63,10 +63,21 @@ table.left_table
 	margin-top: 0;
 }
 
+.right_div table, .left_form table
+{
+	width: 100%;
+}
+
 form
 {
 	border: 2px solid white;
 	background-color: #efc245;
 	color: #4c0000;
+	display: inline-block;
+}
+
+.left_form
+{
+	width: 40%;
 }
 

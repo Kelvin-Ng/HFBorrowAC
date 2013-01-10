@@ -47,7 +47,8 @@ require 'config.php';
 
 ?>
 		<h3><?echo _('Awaiting List')?></h3>
-		<form action="confirm.php" method="post"><table>
+		<form class="left_form" action="confirm.php" method="post">
+		<table>
 			<tr>
 				<td><?echo _('Borrower')?></td>
 				<td><?echo _('Provider')?></td>
@@ -77,7 +78,8 @@ while ($row = $result->fetch_row())
 		</form>
 
 		<h3><?echo _('Old Borrowers')?></h3>
-		<form action="confirm.php" method="post"><table>
+		<form class="left_form" action="confirm.php" method="post">
+		<table>
 			<tr>
 				<td><?echo _('Borrower')?></td>
 				<td><?echo _('Blacklist')?></td>
@@ -104,7 +106,7 @@ $result->free();
 		<input type="submit" name="submit_blacklist">
 		</form>
 		<h3><?echo _('Provider List')?></h3>
-		<form action="confirm.php" method="post">
+		<form class="left_form" action="confirm.php" method="post">
 		<table>
 			<tr>
 				<td><?echo _('Id')?></td>
