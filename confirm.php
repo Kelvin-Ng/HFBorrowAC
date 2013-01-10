@@ -51,7 +51,7 @@ if (isset($_POST['submit_borrower']))
 		"UPDATE borrow SET provider='$provider' WHERE username='$borrower'");
 	}
 }
-else if (isset($_POST['submit_provider']))
+else if (isset($_POST['submit_add_provider']))
 {
 	$handle->query("INSERT INTO provide VALUES('{$_POST['id']}')");	
 }

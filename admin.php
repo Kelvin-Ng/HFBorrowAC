@@ -125,7 +125,7 @@ while ($row = $result->fetch_row())
 $result->free();
 ?>
 		</table>
-		<input type="submit" name="submit_provider">
+		<input type="submit" name="submit_del_provider">
 		</form>
 
 		<h3><?echo _('Add Provider')?></h3>
@@ -133,7 +133,7 @@ $result->free();
 			<a><?echo _('Provider Id: ')?></a>
 			<input type="text" name="id">
 			<br>
-			<input type="submit" name="submit_provider">
+			<input type="submit" name="submit_add_provider">
 		</form>
 	</body>
 </html>	
