@@ -98,10 +98,33 @@ while ($row = $result->fetch_row())
 			</tr>
 <?
 }
+$result->free();
 ?>
 		</table>
-		<input type="submit" name="submit_blacklist"></input>
+		<input type="submit" name="submit_blacklist">
 		</form>
+		<h3><?echo _('Provider List')?></h3>
+		<table>
+			<tr>
+				<td><?echo _('Id')?></td>
+				<td><?echo _('Delete')?></td>
+			</tr>
+<?
+$result = $handle->query('SELECT id FROM provide');
+while ($row = $result->fetch_row())
+{
+?>
+			<tr>
+				<td><?echo $row[0]?></td>
+				<td><input type="checkbox"
+					name="del_provider[<?echo $row[0]?>]"></td>
+			</tr>
+<?
+}
+$result->free();
+?>
+		</table>
+
 		<h3><?echo _('Add Provider')?></h3>
 		<form action="confirm.php" method="post">
 			<a><?echo _('Provider Id: ')?></a>

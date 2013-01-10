@@ -55,6 +55,14 @@ else if (isset($_POST['submit_provider']))
 {
 	$handle->query("INSERT INTO provide VALUES('{$_POST['id']}')");	
 }
+else if (isset($_POST['del_provider']))
+{
+	if (isset($_POST['id']))
+	foreach ($_POST['id'] as $id => $value)
+	{
+		$handle->query("DELETE FROM provide WHERE id = $id");
+	}
+}
 
 if (isset($_POST['blacklist']))
 foreach ($_POST['blacklist'] as $username => $value)
