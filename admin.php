@@ -90,6 +90,8 @@ while ($row = $result->fetch_row())
 ?>
 			<tr>
 				<td><?echo $row[0]?></td>
+				<input type="hidden"
+					name="blacklist[<?echo $row[0]?>]">
 				<td><input type="checkbox"
 					name="blacklist[<?echo $row[0]?>]"
 					<?echo ($row[1] ? 'checked' : '')?>></td>
