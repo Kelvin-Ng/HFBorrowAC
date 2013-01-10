@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-09 19:07+0800\n"
+"POT-Creation-Date: 2013-01-10 14:31+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: admin.php:6 header.php:16
+#: admin.php:6 header.php:17
 msgid "Admin Area"
 msgstr ""
 
@@ -49,19 +49,31 @@ msgstr ""
 msgid "Old Borrowers"
 msgstr ""
 
-#: admin.php:103
+#: admin.php:106
+msgid "Provider List"
+msgstr ""
+
+#: admin.php:110
+msgid "Id"
+msgstr ""
+
+#: admin.php:111
+msgid "Delete"
+msgstr ""
+
+#: admin.php:131
 msgid "Add Provider"
 msgstr ""
 
-#: admin.php:105
+#: admin.php:133
 msgid "Provider Id: "
 msgstr ""
 
-#: confirm.php:69
+#: confirm.php:81
 msgid "Click me to return to Admin Area"
 msgstr ""
 
-#: header.php:8 header.php:11
+#: header.php:9 header.php:12
 msgid "HF Borrow AC System"
 msgstr ""
 

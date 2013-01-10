@@ -104,6 +104,7 @@ $result->free();
 		<input type="submit" name="submit_blacklist">
 		</form>
 		<h3><?echo _('Provider List')?></h3>
+		<form action="confirm.php" method="post">
 		<table>
 			<tr>
 				<td><?echo _('Id')?></td>
@@ -124,6 +125,8 @@ while ($row = $result->fetch_row())
 $result->free();
 ?>
 		</table>
+		<input type="submit" name="submit_provider">
+		</form>
 
 		<h3><?echo _('Add Provider')?></h3>
 		<form action="confirm.php" method="post">
