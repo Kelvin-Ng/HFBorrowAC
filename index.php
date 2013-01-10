@@ -3,7 +3,8 @@
 require 'header.php';
 
 ?>
-		<h2><?echo _('Approved List')?></h2>
+		<h2><? echo _('Awaiting List')?></h2>
+		<div style="float: right">
 		<table>
 			<tr>
 				<td><?echo _('AC in tieba')?></td>
@@ -18,7 +19,7 @@ $handle = mysqli_connect($db_host, $db_username, $db_password);
 $handle->select_db($db_name);
 $today = mktime(0, 0, 0);
 $result = $handle->query(
-"SELECT username, time, provider FROM borrow WHERE time>=$today AND provider != ''");
+"SELECT username, time, provider FROM borrow WHERE time>=$today AND provider = ''");
 while ($row = $result->fetch_row())
 {
 	$date = date('j/n', $row[1]);
@@ -34,8 +35,9 @@ $result->free();
 
 ?>
 		</table>
-		<div style="float: right">
-		<h2><? echo _('Awaiting List')?></h2>
+		</div>
+
+		<h2><?echo _('Approved List')?></h2>
 		<table>
 			<tr>
 				<td><?echo _('AC in tieba')?></td>
@@ -44,7 +46,7 @@ $result->free();
 			</tr>
 <?
 $result = $handle->query(
-"SELECT username, time, provider FROM borrow WHERE time>=$today AND provider == ''");
+"SELECT username, time, provider FROM borrow WHERE time>=$today AND provider != ''");
 while ($row = $result->fetch_row())
 {
 	$date = date('j/n', $row[1]);
@@ -59,7 +61,7 @@ while ($row = $result->fetch_row())
 $result->free();
 ?>
 		</table>
-		</div>
+
 		<h2><?echo _('Borrow an AC')?></h2>
 		<form action="submit.php" method="post">
 			<table>
